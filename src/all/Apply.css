@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.float{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+.register{
+    border: 2px solid black;
+    
+    /* margin-left: 100px; */
+}
+
+.login{
+    border: 2px solid black;
+    /* margin-right: 100px; */
+    /* float: right; */
+}
