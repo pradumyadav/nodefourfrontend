@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom"
         console.log(token)
         useEffect(()=>{
             if(token){
-                axios.get("http://localhost:4005/",{headers:{
+                axios.get("http://localhost:4005/home",{headers:{
                     "authorization" :`Bearer ${token}`
                 }})
                 .then((response)=>console.log(response.data))
@@ -28,8 +28,9 @@ import { useNavigate } from "react-router-dom"
             return(
 
                 <div>
-                    Home Page
-                    <button onClick={handleClick}>Logout</button>
+                  <h2>Home Page</h2>  
+                    {/* <button >Logout</button> */}
+                    <button onClick={handleClick}>LOGOUT</button>
                 </div>
             )
         }

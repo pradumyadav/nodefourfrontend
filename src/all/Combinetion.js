@@ -15,14 +15,13 @@ import Home from "./Home";
                 <Link className="login"to="/login">Login</Link>
                 </div>
                     <Routes>
-                        <Route paath="/" element={<Home/>}></Route>
+
+                        <Route path="/" element={<Home/>}></Route>
                         <Route path="/register" element={<Register/>}/>
                         <Route path="/login" element={<Login/>}/>
                         
                     </Routes>
-
-                {/* <Register/>
-                <Login/> */}
+             
             </div>
         )
     }

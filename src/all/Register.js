@@ -24,7 +24,7 @@ export default function Register(){
                     alert(response.data.msg);
                     setData(response.data);
                 localStorage.setItem("token",response.data.token)
-                    navi("/")
+                     navi("/")
                 })
                 
                 .catch(err=>console.log(err))
