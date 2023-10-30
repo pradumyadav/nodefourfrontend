@@ -19,7 +19,7 @@ export default function Register(){
             const handleSubmit=(e)=>{
                 e.preventDefault()
                 console.log(data)
-                axios.post("http://localhost:4005/api/register",data)
+                axios.post("https://nodebackfour.onrender.com/api/register",data)
                 .then((response)=>{
                     alert(response.data.msg);
                     setData(response.data);
