@@ -9,7 +9,7 @@ import Home from "./Home";
         return(
 
             <div>
-                <div>
+                <div className="navbar">
                     <Link  to="/">Home</Link>
                 <Link className="register" to="/register">Register</Link>
                 <Link className="login"to="/login">Login</Link>

@@ -35,10 +35,11 @@ export default function Login (){
                     })
             }
     return(
-        <div>
-            <label htmlFor="email">Email</label>
+        <div className="container">
+            <h2>Login</h2>
+            {/* <label htmlFor="email">Email</label> */}
             <input type="email" name="email" id="email" value={data.email}placeholder="Enter Email" onChange={handlechange} required/><br/>
-            <label htmlFor="password">Passoward</label>
+            {/* <label htmlFor="password">Passoward</label> */}
             <input type="password" name="password" id="password" value={data.password} placeholder="Enter Passward"onChange={handlechange} required/><br/>
             <button onClick={handleSubmit}>Login</button>
         </div>

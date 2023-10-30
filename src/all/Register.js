@@ -40,15 +40,18 @@ export default function Register(){
 
 
     return(
-        <div>
-            <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" value={data.name} placeholder="Enter Name" onChange={handlechange} required/><br/>
-            <label htmlFor="mob">Mob:</label>
-            <input type="text" name="mob" id="mob"value={data.mob} placeholder="Enter mob" onChange={handlechange} required/><br/>
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email"value={data.email} placeholder="Enter Email" onChange={handlechange} required/><br/>
-            <label htmlFor="password">Passoward</label>
-            <input type="password" name="password" id="password" value={data.password} placeholder="Enter Passward"onChange={handlechange} required/><br/>
+        <div className="container">
+
+
+            <h2>Register</h2>
+            {/* <label htmlFor="name">Name</label> */}
+            <input className="inp" type="text" name="name" id="name" value={data.name} placeholder="Enter Name" onChange={handlechange} required/><br/>
+            {/* <label htmlFor="mob">Mob:</label> */}
+            <input className="inp" type="text" name="mob" id="mob"value={data.mob} placeholder="Enter mob" onChange={handlechange} required/><br/>
+            {/* <label htmlFor="email">Email</label> */}
+            <input className="inp" type="email" name="email" id="email"value={data.email} placeholder="Enter Email" onChange={handlechange} required/><br/>
+            {/* <label htmlFor="password">Passoward</label> */}
+            <input className="inp" type="password" name="password" id="password" value={data.password} placeholder="Enter Passward"onChange={handlechange} required/><br/>
             <button onClick={handleSubmit}>Register</button>
 
 

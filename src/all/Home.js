@@ -27,10 +27,9 @@ import { useNavigate } from "react-router-dom"
 
             return(
 
-                <div>
-                  <h2>Home Page</h2>  
-                    {/* <button >Logout</button> */}
-                    <button onClick={handleClick}>LOGOUT</button>
+                <div className="container">
+                <h2>Home Page</h2>
+                <button onClick={handleClick}>LOGOUT</button>
                 </div>
             )
         }
